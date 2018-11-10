@@ -12,6 +12,8 @@ $ npm i eslint --save-dev
 
 Next, install `eslint-plugin-genus`:
 
+**OBS**: this plugin isn't yet at npm
+
 ```
 $ npm install eslint-plugin-genus --save-dev
 ```
@@ -44,5 +46,3 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 * Fill in provided rules here
-
-**OBS**: this plugin isn't yet at npm
