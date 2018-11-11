@@ -12,7 +12,6 @@ $ npm i eslint --save-dev
 
 Next, install `eslint-plugin-genus`:
 
-**OBS**: this plugin isn't yet at npm
 
 ```
 $ npm install eslint-plugin-genus --save-dev
