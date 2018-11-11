@@ -1,4 +1,4 @@
-# eslint-plugin-sort-import-length
+# eslint-plugin-genus
 
 This plugin sort detect import length to be sorted
 
@@ -43,6 +43,37 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-## Supported Rules
+## Rule Example
+* Import Sort: this rule requires that import declarations be ordered by the size of the import declaration
 
-* Fill in provided rules here
+Example 1:
+```
+// Bad
+import foo from 'xbto'; // length 23
+import bar from 'bar'; // length 22
+
+// Good
+import bar from 'bar'; // length 22
+import foo from 'xbto'; // length 23
+
+```  
+
+Example 2:
+```
+// Bad
+import Xbto, {
+    foo,
+    bar,
+    foobar
+} from 'xbto'; // length 58
+import bar from 'bar'; // length 22
+
+// Good
+import bar from 'bar'; // length 22
+import Xbto, {
+    foo,
+    bar,
+    foobar
+} from 'xbto'; // length 58
+
+```
